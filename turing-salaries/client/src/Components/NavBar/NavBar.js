@@ -6,7 +6,7 @@ class NavBar extends Component {
 
     return (
       <div className='nav-bar'>
-    <div className="background-image">image</div>
+      <img className="logo" src={require('../../assets/turing.png')} alt="logo" />
     <h1 className='main-header'>Turing Salaries</h1>
     <div className='link-container'>
   </div>

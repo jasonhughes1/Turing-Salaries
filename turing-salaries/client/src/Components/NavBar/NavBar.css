@@ -3,18 +3,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 
-.background-image {
-  color: transparent;
-  background-image: url('../../assets/turing.png');
-  background-size: cover;
-  height: 175px;
-  width: 181px;
+.logo {
+  justify-content: center;
+  height: 75px;
+  margin: 0px;
+  width: 75px;
 }
 
-.background-image:hover {
+.logo:hover {
     -webkit-animation-name: rotate;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
@@ -31,5 +30,6 @@
 }
 
 .main-header {
-  margin-top: -10px;
+  justify-content: center;
+  margin: 0px;
 }
