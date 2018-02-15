@@ -7,10 +7,12 @@ class Home extends Component {
     return (
       <div className='home-container'>
         <div className='link-container'>
-        <NavLink className='nav' to='/viewsalary'>ViewSalary</NavLink>
-        <NavLink className='nav' to='/createsalary'>CreateSalary</NavLink>
-      </div>
-        <h1>HOME PAGE</h1>
+          <span className="description">
+            Welcome to Turing Salaries where you can view data from past Turing graduates, or input your salary information from your first job out of Turing.
+          </span>
+          <NavLink className='nav' to='/viewsalary'>ViewSalary</NavLink>
+          <NavLink className='nav' to='/createsalary'>CreateSalary</NavLink>
+        </div>
       </div>
     )
   }

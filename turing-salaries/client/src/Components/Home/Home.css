@@ -1,10 +1,22 @@
 
 .home-container {
   background-color: #3C4040;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /*height: 100vh;*/
 }
 
 .link-container {
-  display: flex;
-  justify-content: space-between;
+  background-color: white;
+  border: 4px solid #48a9b6;
+  margin: 50px 10px;
+  width: 60%;
+}
+
+.description {
+  font-size: 24px;
+}
+
+.nav {
+  color: red;
 }
