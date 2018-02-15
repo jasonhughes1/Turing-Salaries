@@ -3,7 +3,7 @@
   background-color: #3C4040;
   display: flex;
   justify-content: center;
-  /*height: 100vh;*/
+  height: 100vh;
 }
 
 .link-container {
@@ -17,6 +17,6 @@
   font-size: 24px;
 }
 
-.nav {
-  color: red;
+.home-nav {
+  color: black;
 }
