@@ -10,7 +10,26 @@
   color: transparent;
   background-image: url('../../assets/turing.png');
   background-size: cover;
-  height: 195px;
-  width: 200px;
-  
+  height: 175px;
+  width: 181px;
+}
+
+.background-image:hover {
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+.main-header {
+  margin-top: -10px;
 }

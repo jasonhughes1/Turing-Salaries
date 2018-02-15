@@ -1,1 +1,10 @@
 
+.home-container {
+  background-color: #3C4040;
+  height: 100vh;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-between;
+}
