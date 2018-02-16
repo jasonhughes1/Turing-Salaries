@@ -7,7 +7,7 @@ exports.up = function(knex, Promise) {
       table.string('location');
       table.string('offer_accepted_date');
       table.string('graduating_cohort');
-      table.string()
+      table.string('program');
 
 
 

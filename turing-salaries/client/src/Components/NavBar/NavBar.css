@@ -1,16 +1,16 @@
 .nav-bar {
+  align-items: center;
   background-color: #48a9b6;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: row;
 }
 
 .logo {
   justify-content: center;
-  height: 75px;
+  height: 100px;
   margin: 15px 0px;
-  width: 75px;
+  width: 100px;
 }
 
 .logo:hover {
@@ -30,6 +30,7 @@
 }
 
 .main-header {
+  font-size: 46px;
   justify-content: center;
   margin: 0px;
 }
