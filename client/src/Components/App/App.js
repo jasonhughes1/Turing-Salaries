@@ -14,7 +14,6 @@ class App extends Component {
         <Route exact path='/' component={Home} key='Home' />
         <Route exact path='/viewsalary' component={ViewSalary} key='ViewSalary' />
       </div>
-      
     );
   }
 }
