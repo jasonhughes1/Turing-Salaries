@@ -6,7 +6,6 @@ exports.up = function(knex, Promise) {
       table.date('original_start_date');
       table.string('final_cohort');
       table.date('grad_date');
-
     }),
 
     knex.schema.createTable('offers', function(table) {
@@ -18,9 +17,7 @@ exports.up = function(knex, Promise) {
       table.string('title');
       table.integer('alumnus_id').unsigned();
       table.foreign('alumnus_id').references('alumnus.id')
-
     })
-
   ])
 };
 
