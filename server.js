@@ -8,3 +8,5 @@ app.get('/api/hello', (req, res) => {
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
+
+app.use(‘/’, express.static(`${__dirname}/client/build`));
