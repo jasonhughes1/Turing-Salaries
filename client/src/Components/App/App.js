@@ -7,6 +7,7 @@ import ViewSalary from '../ViewSalary/ViewSalary';
 
 
 class App extends Component {
+  
   render() {
     return (
       <div className="App">
