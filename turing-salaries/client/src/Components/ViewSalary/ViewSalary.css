@@ -4,11 +4,15 @@
   height: 100vh;
 }
 
-.link-container {
+.link-container-view {
   display: flex;
   justify-content: space-between;
 }
 
 .nav {
+  color: white;
+}
+
+.view-salary-title {
   color: white;
 }

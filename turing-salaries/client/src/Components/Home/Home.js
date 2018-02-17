@@ -8,11 +8,10 @@ class Home extends Component {
       <div className='home-container'>
         <div className='link-container'>
           <span className="description">
-            Welcome to Turing Salaries where you can view data from past Turing graduates, or input your salary information from your first job out of Turing.
+            Welcome to Turing Salaries where you can view data from past Turing graduates.
           </span>
           <div className="button-area">
-            <NavLink className='home-nav' to='/viewsalary'>ViewSalary</NavLink>
-            <NavLink className='home-nav' to='/createsalary'>CreateSalary</NavLink>
+            <NavLink className='home-nav' to='/viewsalary'>View Salaries</NavLink>
           </div>
         </div>
       </div>

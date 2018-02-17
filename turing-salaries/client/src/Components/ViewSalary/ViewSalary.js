@@ -6,11 +6,10 @@ class ViewSalary extends Component {
   render() {
     return (
       <div className='view-salary-container'>
-        <div className='link-container'>
+        <div className='link-container-view'>
         <NavLink className='nav' exact to='/'>Home</NavLink>
-        <NavLink className='nav' to='/createsalary'>CreateSalary</NavLink>
       </div>
-        <h1>ViewSalary Lives Here</h1>
+        <h1 className='view-salary-title'>ViewSalary Lives Here</h1>
       </div>
     )
   }
