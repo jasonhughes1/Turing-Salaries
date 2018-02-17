@@ -1,0 +1,18 @@
+
+.view-salary-container {
+  background-color: #3C4040;
+  height: 100vh;
+}
+
+.link-container-view {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  color: white;
+}
+
+.view-salary-title {
+  color: white;
+}

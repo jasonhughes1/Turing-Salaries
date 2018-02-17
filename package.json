@@ -1,0 +1,21 @@
+{
+  "name": "turing-salaries",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "knex": "^0.14.3",
+    "pg": "^7.4.1",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "yarn": "^1.4.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}
