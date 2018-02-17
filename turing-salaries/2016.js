@@ -1,4 +1,4 @@
-[
+module.exports = [
   {
     "Original Cohort": 1502,
     "Original Start Date": "2/9/2015",
