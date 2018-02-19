@@ -13,8 +13,8 @@ exports.up = function(knex, Promise) {
       table.date('accepted_date');
       table.integer('days_to_offer')
       table.string('payment_type');
-      table.decimal('payment_rate');
-      table.decimal('annualized_salary');
+      table.decimal('payment_rate', null);
+      table.decimal('annualized_salary', null);
       table.string('title');
       table.integer('alumni_id').unsigned();
       table.foreign('alumni_id').references('alumni.id');
