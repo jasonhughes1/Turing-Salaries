@@ -1,6 +1,6 @@
 exports.up = function(knex, Promise) {
   return Promise.all([
-    knex.schema.createTable('alumnus', function(table) {
+    knex.schema.createTable('alumni', function(table) {
       table.increments('id').primary();
       table.string('original_cohort');
       table.date('original_start_date');
@@ -11,19 +11,22 @@ exports.up = function(knex, Promise) {
     knex.schema.createTable('offers', function(table) {
       table.increments('id').primary();
       table.date('accepted_date');
+      table.integer('days_to_offer')
       table.string('payment_type');
       table.decimal('payment_rate');
       table.decimal('annualized_salary');
       table.string('title');
-      table.integer('alumnus_id').unsigned();
-      table.foreign('alumnus_id').references('alumnus.id')
+      table.integer('alumni_id').unsigned();
+      table.foreign('alumni_id').references('alumni.id');
+      .onDelete('CASCADE');
+      .onUpdate('CASCADE');
     })
   ])
 };
 
 exports.down = function(knex, Promise) {
   return Promise.all([
-    knex.schema.dropTable('alumnus');
-    knex.schema.dropTable('offers')
+    knex.schema.dropTable('offers'),
+    knex.schema.dropTable('alumni')
   ]);
 };
