@@ -18,11 +18,10 @@ exports.up = function(knex, Promise) {
       table.string('title');
       table.integer('alumni_id').unsigned();
       table.foreign('alumni_id').references('alumni.id');
-      .onDelete('CASCADE');
-      .onUpdate('CASCADE');
     })
   ])
 };
+
 
 exports.down = function(knex, Promise) {
   return Promise.all([
