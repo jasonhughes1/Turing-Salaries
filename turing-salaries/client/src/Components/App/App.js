@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Route } from 'react-router-dom';
-import NavBar from '../NavBar/NavBar';
+import NavBar from '../../Containers/NavBar/NavBar';
 import Home from '../Home/Home';
-import ViewSalary from '../ViewSalary/ViewSalary';
-
+import ViewSalary from '../../Containers/ViewSalary/ViewSalary';
 
 class App extends Component {
+
+
   render() {
     return (
       <div className="App">
