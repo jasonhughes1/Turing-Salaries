@@ -20,3 +20,5 @@ app.get('/api/v1/alumni', (request, response) => {
 
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
+
+module.exports = app;

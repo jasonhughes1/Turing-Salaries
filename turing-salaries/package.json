@@ -2,6 +2,7 @@
   "name": "turing-salaries",
   "version": "1.0.0",
   "scripts": {
+    "test": "mocha --exit",
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
@@ -16,6 +17,9 @@
     "yarn": "^1.4.0"
   },
   "devDependencies": {
-    "concurrently": "^3.5.0"
+    "chai": "^4.1.2",
+    "chai-http": "git+https://github.com/chaijs/chai-http.git#3ea4524",
+    "concurrently": "^3.5.0",
+    "mocha": "^5.0.1"
   }
 }
