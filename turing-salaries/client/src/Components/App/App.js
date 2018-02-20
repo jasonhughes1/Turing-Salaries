@@ -4,9 +4,17 @@ import { Route } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
 import Home from '../Home/Home';
 import ViewSalary from '../ViewSalary/ViewSalary';
+import API from '../../helpers/API';
 
+const { getData } = API;
 
 class App extends Component {
+
+  async componentDidMount() {
+    let alumniData = await getData()
+    console.log(alumniData);
+  }
+
   render() {
     return (
       <div className="App">
