@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './ViewSalary.css';
+import { connect } from 'react-redux';
 
 
 class ViewSalary extends Component {
@@ -17,4 +18,10 @@ class ViewSalary extends Component {
   }
 }
 
-export default ViewSalary;
+export const mapStateToProps = (store) => {
+  return {
+    alumni: store.alumData
+  };
+};
+
+export default connect(mapStateToProps, null)(ViewSalary);
