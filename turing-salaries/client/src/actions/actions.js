@@ -3,7 +3,6 @@ import { getData } from '../helpers/API';
 
 export const getAllData = () => async dispatch => {
   const newData = await getData();
-  console.log(newData);
   dispatch(fetchDataSuccess(newData));
 };
 
