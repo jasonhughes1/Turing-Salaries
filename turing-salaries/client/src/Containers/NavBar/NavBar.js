@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './NavBar.css';
-import API from '../../helpers/API';
-const { getData } = API;
+import { getData } from '../../helpers/API'
 
 class NavBar extends Component {
 
