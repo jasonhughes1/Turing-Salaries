@@ -9,9 +9,13 @@
   },
   "dependencies": {
     "express": "^4.16.2",
+    "highcharts": "^6.0.7",
+    "highcharts-react-official": "github:highcharts/highcharts-react",
     "knex": "^0.14.3",
     "middleware": "^1.0.0",
     "pg": "^7.4.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "reducer": "^0.19.2",
