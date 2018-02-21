@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './NavBar.css';
-import API from '../../helpers/API';
-const { getData } = API;
+import { getData } from '../../helpers/API';
+import { connect } from 'react-redux';
+import { getAllData } from '../../actions/actions';
 
 class NavBar extends Component {
 
-  async componentDidMount() {
-    let alumniData = await getData()
-    console.log(alumniData);
+  componentDidMount() {
+    this.props.salaries();
   }
 
   render() {
@@ -20,4 +20,18 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar;
+export const mapStateToProps = (store) => {
+  return {
+    alumni: store.alumData
+  };
+};
+
+export const mapDispatchToProps = (dispatch) => {
+  return {
+    salaries: (newData) => {
+      dispatch(getAllData(newData));
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(NavBar);
