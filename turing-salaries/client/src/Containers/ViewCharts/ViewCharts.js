@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import './ViewSalary.css';
 import { connect } from 'react-redux';
+import MyStockChart from '../highcharts/highcharts';
 
-class ViewSalary extends Component {
+class ViewCharts extends Component {
 
   render() {
     return (
@@ -11,7 +11,8 @@ class ViewSalary extends Component {
         <div className='link-container-view'>
         <NavLink className='nav' exact to='/'>Home</NavLink>
       </div>
-        <h1 className='view-salary-title'>ViewSalary Lives Here</h1>
+        <h1 className='view-salary-title'>Charts Lives Here</h1>
+          <MyStockChart />
       </div>
     )
   }
@@ -23,4 +24,4 @@ export const mapStateToProps = (store) => {
   };
 };
 
-export default connect(mapStateToProps, null)(ViewSalary);
+export default connect(mapStateToProps, null)(ViewCharts);
