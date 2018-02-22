@@ -22,6 +22,7 @@ class PieChart extends Component {
 
     return (
       <VictoryPie
+        
                 height={150}
                  width={150}
                  style={{
