@@ -6,6 +6,7 @@ import Card from '../../Components/Card/Card';
 import Search from '../../Components/Search/Search';
 
 
+
 class ViewSalary extends Component {
   constructor() {
     super();

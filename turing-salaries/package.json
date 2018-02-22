@@ -23,6 +23,7 @@
     "redux-logger": "^3.0.6",
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.2.0",
+    "victory": "^0.25.6",
     "yarn": "^1.4.0"
   },
   "devDependencies": {
