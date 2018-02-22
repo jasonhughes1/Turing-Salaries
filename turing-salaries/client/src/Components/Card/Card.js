@@ -7,7 +7,7 @@ const Card = (props) => {
     <div className='card'>
       <p><span className="card-titles">Job Title:</span> {props.title}</p>
       <p><span className="card-titles">Salary:</span> ${props.paymentRate}</p>
-      <p><span className="card-titles">Annualized Salary:</span> {props.annualizedSalary}</p>
+      <p><span className="card-titles">Annualized Salary:</span> ${props.annualizedSalary}</p>
       <p><span className="card-titles">Payment Type:</span> {props.paymentType}</p>
       <p><span className="card-titles">Offer Accepted:</span> {props.acceptedDate.slice(0, -14)}</p>
       <p><span className="card-titles">Days to Offer:</span> {props.daysToOffer}</p>
