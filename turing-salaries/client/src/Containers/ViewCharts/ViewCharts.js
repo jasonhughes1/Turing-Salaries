@@ -14,6 +14,7 @@ class ViewCharts extends Component {
       </div>
         <h1 className='view-salary-title'>Charts Lives Here</h1>
           <MyStockChart />
+
           <PieChart />
       </div>
     )
