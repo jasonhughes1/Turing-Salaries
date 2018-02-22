@@ -35,9 +35,18 @@
 
 .charts-nav {
   color: black;
+  font-size: 20px;
+}
+
+.charts-nav {
+  color: black;
 }
 
 
 .home-nav:hover {
-  border: 2px solid black;
+  border: 2px solid #48a9b6; 
+}
+
+.charts-nav:hover {
+  border: 2px solid #48a9b6;
 }

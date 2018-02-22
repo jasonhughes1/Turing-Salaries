@@ -2,8 +2,12 @@
 .view-salary-container {
   background-color: #3C4040;
   height: auto;
-  /*display: flex;*/
-  /*flex-wrap: wrap;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.search {
+  margin: 20px;
 }
 
 .link-container-view {
@@ -15,9 +19,15 @@
   color: white;
 }
 
+.card:hover {
+  cursor: pointer;
+  background-color: #D6D7D6;
+}
+
 .view-salary-title {
   color: white;
   text-align: center;
+  margin: 10px;
 }
 
 .view-salary-cards {
