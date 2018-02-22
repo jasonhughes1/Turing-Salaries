@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import { VictoryLine, VictoryChart, VictoryAxis, VictoryTheme, VictoryStack } from 'victory';
 import { connect } from 'react-redux';
 
-
-
+// const data = helperfunction(raw);
 
 const data2014 = [
   {month: 1, earnings: 11500},
@@ -30,7 +29,8 @@ const data2015 = [
 class LineChart extends Component {
   render() {
 
-    console.log(this.props.alumni[0])
+
+
 
     return (
       <div>
