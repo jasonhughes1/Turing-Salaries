@@ -1,7 +1,9 @@
 
 .view-salary-container {
   background-color: #3C4040;
-  height: 100vh;
+  height: auto;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
 }
 
 .link-container-view {
@@ -15,4 +17,11 @@
 
 .view-salary-title {
   color: white;
+  text-align: center;
+}
+
+.view-salary-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
