@@ -36,7 +36,9 @@ class ViewSalary extends Component {
         <NavLink className='nav' exact to='/'>Home</NavLink>
       </div>
         <h1 className='view-salary-title'>Alum Data</h1>
-        {cards}
+        <div className="view-salary-cards">
+          {cards}
+        </div>
       </div>
       )
     }

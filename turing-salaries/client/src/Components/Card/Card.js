@@ -3,18 +3,18 @@ import './Card.css';
 
 
 const Card = (props) => {
-  console.log(props);
   return (
     <div className='card'>
-      <p>{props.title}</p>
-      <p>{props.paymentRate}</p>
-      <p>{props.annualizedSalary}</p>
-      <p>{props.acceptedDate}</p>
-      <p>{props.daysToOffer}</p>
-      <p>{props.gradDate}</p>
-      <p>{props.originalCohort}</p>
-      <p>{props.finalCohort}</p>
-      <p>{props.originalStartDate}</p>
+      <p>Job Title: {props.title}</p>
+      <p>Salary: ${props.paymentRate}</p>
+      <p>Annualized Salary: {props.annualizedSalary}</p>
+      <p>Payment Type: {props.paymentType}</p>
+      <p>Offer Accepted: {props.acceptedDate}</p>
+      <p>Days to Offer: {props.daysToOffer}</p>
+      <p>Graduation Date: {props.gradDate}</p>
+      <p>Original Cohort: {props.originalCohort}</p>
+      <p>Final Cohort: {props.finalCohort}</p>
+      <p>Turing Start Date: {props.originalStartDate}</p>
     </div>
   )
 }
