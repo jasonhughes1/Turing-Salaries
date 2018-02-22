@@ -3,14 +3,22 @@ import { NavLink } from 'react-router-dom';
 import './ViewSalary.css';
 import { connect } from 'react-redux';
 import Card from '../../Components/Card/Card';
+import Search from '../../Components/Search/Search';
 
 
 class ViewSalary extends Component {
+  constructor() {
+    super();
+    this.state = {
+      string: ''
+    }
+    this.setState = this.setState.bind(this);
+  }
 
   render() {
     if (!this.props.alumni.length) {
       return(
-        <div>Wait</div>
+        <div>Loading</div>
       )
     }
 
@@ -36,6 +44,7 @@ class ViewSalary extends Component {
         <NavLink className='nav' exact to='/'>Home</NavLink>
       </div>
         <h1 className='view-salary-title'>Alumni Salary Data</h1>
+        <Search setAppState={this.setState}/>
         <div className="view-salary-cards">
           {cards}
         </div>
