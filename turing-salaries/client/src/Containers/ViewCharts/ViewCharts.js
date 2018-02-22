@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import MyStockChart from '../highcharts/highcharts';
+import PieChart from '../PieChart/PieChart';
 
 class ViewCharts extends Component {
 
@@ -13,6 +14,7 @@ class ViewCharts extends Component {
       </div>
         <h1 className='view-salary-title'>Charts Lives Here</h1>
           <MyStockChart />
+          <PieChart />
       </div>
     )
   }
