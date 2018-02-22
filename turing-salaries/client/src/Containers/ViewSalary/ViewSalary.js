@@ -17,6 +17,7 @@ class ViewSalary extends Component {
     else {
     let cards = this.props.alumni[0].map(card => {
       return <Card
+                   key = {card.id}
                    title = {card.title}
              paymentRate = {card.payment_rate}
             acceptedDate = {card.accepted_date}
