@@ -1,55 +1,70 @@
-import React from 'react'
-import Highcharts from 'highcharts/highstock'
-import HighchartsReact from 'highcharts-react-official';
+import React, { Component } from 'react'
+import { VictoryLine, VictoryChart, VictoryAxis, VictoryTheme, VictoryStack } from 'victory';
 import { connect } from 'react-redux';
 
 
-var config = {
-  xAxis: {
-    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-  },
-  series: [{
-    data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 295.6, 454.4]
-  }],
-  title: {
-    text: 'Alummni Data'
+
+const data2014 = [
+  {month: 1, earnings: 11500},
+  {month: 2, earnings: 13250},
+  {month: 3, earnings: 20000},
+  {month: 4, earnings: 15500},
+  {month: 5, earnings: 15500},
+  {month: 6, earnings: 15500},
+  {month: 7, earnings: 15500},
+  {month: 8, earnings: 15500},
+  {month: 9, earnings: 15500},
+  {month: 10, earnings: 15500},
+  {month: 11, earnings: 15500},
+  {month: 12, earnings: 15500}
+];
+
+const data2015 = [
+  {month: 1, earnings: 18000},
+  {month: 2, earnings: 13250},
+  {month: 3, earnings: 15000},
+  {month: 4, earnings: 12000}
+];
+
+class LineChart extends Component {
+  render() {
+
+    console.log(this.props.alumni[0])
+
+    return (
+      <div>
+        <VictoryChart
+            width={800}
+            theme={VictoryTheme.material}
+          >
+            <VictoryAxis
+              tickValues={["January", "Feburary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]}
+              style={{tickLabels: {fontSize: 12, width: 20, marginRight: 55}}}
+              offSetX={0}
+            />
+            <VictoryAxis
+              dependentAxis
+              tickFormat={(x) => (`$${x / 1000}k`)}
+            />
+            <VictoryStack
+              colorScale={"warm"}
+            >
+              <VictoryLine
+                data={data2014}
+                x={"Months"}
+                y={"earnings"}
+              />
+            </VictoryStack>
+          </VictoryChart>
+      </div>
+    )
   }
-};
-
-const LineChart = () => {
-  return (
-    <div>
-    <HighchartsReact
-      highcharts={Highcharts}
-      constructorType={'stockChart'}
-      options={config}
-    />
-  </div>
-  )
 }
-
-// const options = {
-//   title: {
-//     text: 'Alummni Data'
-//   },
-//   series: [{
-//     data: [1, 2, 3]
-//   }],
-//   yAxis: ['January', 'Feburary', 'March', 'A'] 
-// }
-// // console.log(this.props.alumni)
-
-// const MyStockChart = () => 
-//     <HighchartsReact
-//       highcharts={Highcharts}
-//       constructorType={'stockChart'}
-//       options={options}
-//     />
 
 export const mapStateToProps = (store) => {
   return {
     alumni: store.alumData
-  }
-}
+  };
+};
 
 export default connect(mapStateToProps, null)(LineChart);
