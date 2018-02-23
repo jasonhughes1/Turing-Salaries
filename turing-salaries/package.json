@@ -10,6 +10,7 @@
   "dependencies": {
     "express": "^4.16.2",
     "highcharts": "^6.0.7",
+    "highcharts-react": "0.0.3",
     "highcharts-react-official": "github:highcharts/highcharts-react",
     "knex": "^0.14.4",
     "middleware": "^1.0.0",
