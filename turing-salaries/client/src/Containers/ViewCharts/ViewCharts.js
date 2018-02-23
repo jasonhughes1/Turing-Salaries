@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import MyStockChart from '../highcharts/highcharts';
 import PieChart from '../PieChart/PieChart';
+import LineGraph from '../LineGraph/LineGraph';
 
 class ViewCharts extends Component {
 
@@ -12,7 +13,8 @@ class ViewCharts extends Component {
         <div className='link-container-view'>
         <NavLink className='nav' exact to='/'>Home</NavLink>
       </div>
-        <h1 className='view-salary-title'>Charts Lives Here</h1>
+        <h1 className='view-salary-title'>Salary and Job Comparisons</h1>
+          <LineGraph alumData={this.props.alumni}/>
           <MyStockChart />
           <PieChart />
       </div>

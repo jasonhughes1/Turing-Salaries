@@ -5,6 +5,7 @@
   "dependencies": {
     "concurrently": "^3.5.1",
     "highcharts": "^6.0.7",
+    "highcharts-react": "0.0.3",
     "highcharts-react-official": "github:highcharts/highcharts-react",
     "moment": "^2.20.1",
     "react": "^16.2.0",
