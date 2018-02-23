@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
-import MyStockChart from '../highcharts/highcharts';
-import PieChart from '../PieChart/PieChart';
-import LineGraph from '../LineGraph/LineGraph';
+import Pie from '../Pie/Pie';
 
-class ViewCharts extends Component {
+class ViewPie extends Component {
 
   render() {
     return (
@@ -14,9 +12,7 @@ class ViewCharts extends Component {
         <NavLink className='nav' exact to='/'>Home</NavLink>
       </div>
         <h1 className='view-salary-title'>Salary and Job Comparisons</h1>
-          <LineGraph alumData={this.props.alumni}/>
-          <MyStockChart />
-          <PieChart />
+          <Pie />
       </div>
     )
   }
@@ -28,4 +24,4 @@ export const mapStateToProps = (store) => {
   };
 };
 
-export default connect(mapStateToProps, null)(ViewCharts);
+export default connect(mapStateToProps, null)(ViewPie);

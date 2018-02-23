@@ -13,7 +13,9 @@ class Home extends Component {
           </span>
           <div className="button-area">
             <NavLink className='home-nav' to='/viewsalary'>View Salaries</NavLink>
-            <NavLink className='charts-nav' to='/viewcharts'>View Charts</NavLink>
+            <NavLink className='charts-nav' to='/viewline'>View Line Chart</NavLink>
+            <NavLink className='charts-nav' to='/viewPie'>View Pie Chart</NavLink>
+            <NavLink className='charts-nav' to='/viewBar'>View Bar Graph</NavLink>
           </div>
         </div>
       </div>
