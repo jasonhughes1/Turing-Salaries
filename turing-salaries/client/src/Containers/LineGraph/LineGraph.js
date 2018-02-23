@@ -6,10 +6,6 @@ import { connect } from 'react-redux';
 
 class LineGraph extends Component {
 
-  componentDidMount() {
-    console.log(this.props.alumni);
-
-  }
 
   dataCleaner(data) {
     let cohort;

@@ -4,7 +4,9 @@ import { Route } from 'react-router-dom';
 import NavBar from '../../Containers/NavBar/NavBar';
 import Home from '../Home/Home';
 import ViewSalary from '../../Containers/ViewSalary/ViewSalary';
-import ViewCharts from '../../Containers/ViewCharts/ViewCharts';
+import ViewLine from '../../Containers/ViewLine/ViewLine';
+import ViewBar from '../../Containers/ViewBar/ViewBar';
+import ViewPie from '../../Containers/ViewPie/ViewPie'
 
 class App extends Component {
 
@@ -15,7 +17,9 @@ class App extends Component {
         <Route path='/' component={NavBar} key='NavBar'/>
         <Route exact path='/' component={Home} key='Home' />
         <Route exact path='/viewsalary' component={ViewSalary} key='ViewSalary' />
-        <Route exact path='/viewcharts' component={ViewCharts} key='ViewCharts' />
+        <Route exact path='/viewline' component={ViewLine} key='ViewLine' />
+        <Route exact path='/viewbar' component={ViewBar} key='ViewBar' />
+        <Route exact paht='/viewpie' component={ViewPie} key='ViewPie' />
       </div>
     );
   }
