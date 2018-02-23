@@ -56,10 +56,12 @@ class LineGraph extends Component {
         }
     },
 
+
     series: [{
         name: 'Alum Salaries',
         data: alum
     }],
+
 
     responsive: {
         rules: [{
