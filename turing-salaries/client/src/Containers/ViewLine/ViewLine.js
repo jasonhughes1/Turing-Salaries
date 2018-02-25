@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
-import MyStockChart from '../highcharts/highcharts';
-import PieChart from '../PieChart/PieChart';
 import LineGraph from '../LineGraph/LineGraph';
-import Pie from '../Pie/Pie';
 
 class ViewLine extends Component {
 

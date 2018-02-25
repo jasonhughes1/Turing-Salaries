@@ -6,26 +6,22 @@ import { connect } from 'react-redux';
 
 class Pie extends Component {
 
-  //
-  // dataCleaner(data) {
-  //   let cohort;
-  //   if(data.length) {
-  //     cohort = data[0].filter(item => item.final_cohort === '1507')
-  //   }
-  //   return cohort
-  // }
 
   render() {
-  //   if(!this.props.alumni.length) {
-  //     return (
-  //       <div>Loading</div>
-  //     )
-  //   } else {
-  //
-  //
-  // let alums = this.dataCleaner(this.props.alumData)
-  // let alum = alums.map(salary => parseInt(salary.annualized_salary))
-  // console.log(alum);
+    if(!this.props.alumni.length) {
+      return (
+        <div>Loading</div>
+      )
+    } else {
+    const data = this.props.alumni[0].reduce((accu, values) => {
+      if(!accu[values.title]) {
+        accu[values.title] = 0
+      }
+      accu[values.title]++
+      return accu;
+    }, {})
+    console.log(data);
+
     let options = {
 
       chart: {
@@ -57,26 +53,39 @@ class Pie extends Component {
        name: 'Brands',
        colorByPoint: true,
        data: [{
-           name: 'IE',
-           y: 56.33
+           name: 'Analyst',
+           y: data.Analyst
        }, {
-           name: 'Chrome',
-           y: 24.03,
+           name: 'Associate - Projects',
+           y: data["Associate - Projects"],
            sliced: true,
            selected: true
        }, {
-           name: 'Firefox',
-           y: 10.38
+           name: 'Consultant',
+           y: data.Consultant
        }, {
-           name: 'Safari',
-           y: 4.77
+           name: 'Customer Support',
+           y: data["Customer Support"]
        }, {
-           name: 'Opera',
-           y: 0.91
+           name: 'DevOps',
+           y: data.DevOps
        }, {
-           name: 'Other',
-           y: 0.2
-       }]
+           name: 'Developer',
+           y: data.Developer
+       }, {
+           name: 'Engineer',
+           y: data.Engineer
+       }, {
+          name: 'Instructor',
+          y: data.Instructor
+       }, {
+         name: 'QA/Tester',
+         y: data["QA/Tester"]
+       }, {
+         name: 'Research Associate',
+         y: data["Research Associate"]
+       }
+     ]
    }]
 
 }
@@ -87,10 +96,10 @@ class Pie extends Component {
           options={options}
          />
       </div>
-    )
+      )
+    }
   }
-  }
-
+}
 
 export const mapStateToProps = (store) => {
   return {
