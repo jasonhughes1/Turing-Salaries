@@ -8,6 +8,7 @@
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
   },
   "dependencies": {
+    "color-convert": "^1.9.1",
     "express": "^4.16.2",
     "highcharts": "^6.0.7",
     "highcharts-react": "0.0.3",
