@@ -19,7 +19,7 @@ class App extends Component {
         <Route exact path='/viewsalary' component={ViewSalary} key='ViewSalary' />
         <Route exact path='/viewline' component={ViewLine} key='ViewLine' />
         <Route exact path='/viewbar' component={ViewBar} key='ViewBar' />
-        <Route exact paht='/viewpie' component={ViewPie} key='ViewPie' />
+        <Route exact path='/viewpie' component={ViewPie} key='ViewPie' />
       </div>
     );
   }
