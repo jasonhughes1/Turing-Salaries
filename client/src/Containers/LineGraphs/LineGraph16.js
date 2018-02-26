@@ -4,16 +4,33 @@ import Highcharts from 'highcharts/highstock';
 import HighchartsReact from 'highcharts-react-official';
 import { connect } from 'react-redux';
 
-class LineGraph extends Component {
+class LineGraph16 extends Component {
 
 
-  dataCleaner(data) {
+  dataCleaner1602(data) {
     let cohort;
     if(data.length) {
-      cohort = data[0].filter(item => item.final_cohort === '1507')
+      cohort = data[0].filter(item => item.final_cohort === '1602')
     }
     return cohort
   }
+
+  dataCleaner1603(data) {
+    let cohort;
+    if(data.length) {
+      cohort = data[0].filter(item => item.final_cohort === '1603')
+    }
+    return cohort
+  }
+
+  dataCleaner1605(data) {
+    let cohort;
+    if(data.length) {
+      cohort = data[0].filter(item => item.final_cohort === '1605')
+    }
+    return cohort
+  }
+
 
   render() {
     if(!this.props.alumni.length) {
@@ -21,15 +38,20 @@ class LineGraph extends Component {
         <div>Loading</div>
       )
     } else {
+  let alums1602 = this.dataCleaner1602(this.props.alumData)
+  let alum1602 = alums1602.map(salary => parseInt(salary.annualized_salary))
+
+  let alums1603 = this.dataCleaner1603(this.props.alumData)
+  let alum1603 = alums1603.map(salary => parseInt(salary.annualized_salary))
+
+  let alums1605 = this.dataCleaner1605(this.props.alumData)
+  let alum1605 = alums1605.map(salary => parseInt(salary.annualized_salary))
 
 
-  let alums = this.dataCleaner(this.props.alumData)
-  let alum = alums.map(salary => parseInt(salary.annualized_salary))
-  console.log(alum);
     let options = {
 
     title: {
-        text: 'Turing Alumni Salary by Module'
+        text: '2016 Salaries'
     },
 
     yAxis: {
@@ -43,20 +65,29 @@ class LineGraph extends Component {
         verticalAlign: 'middle'
     },
 
+    xAxis: {
+      categories: ['0']
+    },
+
     plotOptions: {
         series: {
-            label: {
-                connectorAllowed: false
-            },
-            pointStart: 2010
+            allowPointSelect: true
         }
     },
 
 
-    series: [{
-        name: 'Alum Salaries',
-        data: alum
-    }],
+    series: [
+      {
+        name: '1602',
+        data: alum1602
+    }, {
+        name: '1603',
+        data: alum1603
+    }, {
+        name: '1605',
+        data: alum1605
+    }
+  ],
 
 
     responsive: {
@@ -93,4 +124,4 @@ export const mapStateToProps = (store) => {
   }
 }
 
-export default connect(mapStateToProps, null)(LineGraph)
+export default connect(mapStateToProps, null)(LineGraph16)
