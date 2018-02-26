@@ -12,10 +12,10 @@ class Home extends Component {
             Welcome to Turing Salaries where you can view data from past Turing graduates.
           </span>
           <div className="button-area">
-            <NavLink className='home-nav' to='/viewsalary'>View Salaries</NavLink>
-            <NavLink className='charts-nav' to='/viewline'>View Line Chart</NavLink>
-            <NavLink className='charts-nav' to='/viewPie'>View Pie Chart</NavLink>
-            <NavLink className='charts-nav' to='/viewBar'>View Bar Graph</NavLink>
+            <NavLink className='home-nav' to='/viewsalary'>Browse Salaries</NavLink>
+            <NavLink className='charts-nav' to='/viewline'>2015 & 2016 Salaries</NavLink>
+            <NavLink className='charts-nav' to='/viewPie'>Jobs Titles of Grads</NavLink>
+            <NavLink className='charts-nav' to='/viewBar'>How many days to hire?</NavLink>
           </div>
         </div>
       </div>

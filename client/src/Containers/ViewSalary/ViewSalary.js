@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import './ViewSalary.css';
 import { connect } from 'react-redux';
 import Card from '../../Components/Card/Card';
-import Search from '../../Components/Search/Search';
 
 
 class ViewSalary extends Component {
@@ -45,7 +44,6 @@ class ViewSalary extends Component {
         <NavLink className='nav' exact to='/'>Home</NavLink>
       </div>
         <h1 className='view-salary-title'>Alumni Salary Data</h1>
-        <Search setAppState={this.setState}/>
         <div className="view-salary-cards">
           {cards}
         </div>
