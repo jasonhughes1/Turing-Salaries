@@ -9,6 +9,8 @@ const environment = process.env.NODE_ENV || 'development';
 const configuration = require('./knexfile')[environment];
 const database = require('knex')(configuration);
 
+app.use('/', express.static(`${__dirname}/client/build`));
+
 
 app.get('/api/v1/alumni', (request, response) => {
   database('alumni').select()
@@ -21,6 +23,6 @@ app.get('/api/v1/alumni', (request, response) => {
 });
 
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.listen(app.get('port'));
 
 module.exports = app;
