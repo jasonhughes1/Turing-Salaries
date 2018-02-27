@@ -2,7 +2,7 @@ import * as actions from './actions';
 
 describe('Actions', () => {
 
-  it.only('has a type of fetch data success', () => {
+  it('has a type of fetch data success', () => {
     const data = {
     "original_cohort": 1502,
     "original_start_date": "2/9/2015",
