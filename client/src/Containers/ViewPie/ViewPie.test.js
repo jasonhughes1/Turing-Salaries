@@ -16,4 +16,5 @@ describe('ViewPie Tests', () => {
 
     expect(renderedViewPie).toMatchSnapshot();
   });
+  
 });
