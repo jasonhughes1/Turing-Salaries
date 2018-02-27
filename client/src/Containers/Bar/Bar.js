@@ -16,19 +16,12 @@ class Bar extends Component {
    let offerDays = data.map(days => days.days_to_offer)
 
    let beforeGrad = offerDays.filter(small => small <= 0)
-   console.log(beforeGrad.length)
    let smallDays = offerDays.filter(small => small > 0 && small <= 30)
-   console.log(smallDays.length)
    let mediumDays = offerDays.filter(small => small > 30 && small <= 60)
-   console.log(mediumDays.length)
    let bigDays = offerDays.filter(small => small > 60 && small <= 90)
-   console.log(bigDays.length)
    let largeDays = offerDays.filter(small => small > 90 && small <= 120)
-   console.log(largeDays.length)
    let hugeDays = offerDays.filter(small => small > 120 && small <= 150)
-   console.log(hugeDays.length);
    let giganticDays = offerDays.filter(small => small > 150 && small <= 400)
-   console.log(giganticDays.length);
     let options = {
 
       chart: {
