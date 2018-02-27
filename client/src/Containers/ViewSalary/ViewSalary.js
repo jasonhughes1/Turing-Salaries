@@ -10,45 +10,43 @@ export class ViewSalary extends Component {
     super();
     this.state = {
       string: ''
-    }
+    };
     this.setState = this.setState.bind(this);
   }
 
   render() {
     if (!this.props.alumni.length) {
-      return(
+      return (
         <div>Loading</div>
-      )
-    }
-
-    else {
-    let cards = this.props.alumni[0].map(card => {
-      return <Card
-                   key = {card.id}
-                   title = {card.title}
-             paymentRate = {card.payment_rate}
-            acceptedDate = {card.accepted_date}
-        annualizedSalary = {card.annualized_salary}
-             daysToOffer = {card.days_to_offer}
-             finalCohort = {card.final_cohort}
-                gradDate = {card.grad_date}
-                      id = {card.id}
+      );
+    } else {
+      let cards = this.props.alumni[0].map(card => {
+        return <Card
+          key = {card.id}
+          title = {card.title}
+          paymentRate = {card.payment_rate}
+          acceptedDate = {card.accepted_date}
+          annualizedSalary = {card.annualized_salary}
+          daysToOffer = {card.days_to_offer}
+          finalCohort = {card.final_cohort}
+          gradDate = {card.grad_date}
+          id = {card.id}
           originalCohort = {card.original_cohort}
-       originalStartDate = {card.original_start_date}
-             paymentType = {card.payment_type}
-      />
-    })
-    return (
-      <div className='view-salary-container'>
-        <div className='link-container-view'>
-        <NavLink className='nav' exact to='/'>Home</NavLink>
-      </div>
-        <h1 className='view-salary-title'>Alumni Salary Data</h1>
-        <div className="view-salary-cards">
-          {cards}
+          originalStartDate = {card.original_start_date}
+          paymentType = {card.payment_type}
+        />;
+      });
+      return (
+        <div className='view-salary-container'>
+          <div className='link-container-view'>
+            <NavLink className='nav' exact to='/'>Home</NavLink>
+          </div>
+          <h1 className='view-salary-title'>Alumni Salary Data</h1>
+          <div className="view-salary-cards">
+            {cards}
+          </div>
         </div>
-      </div>
-      )
+      );
     }
   }
 }

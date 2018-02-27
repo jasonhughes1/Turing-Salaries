@@ -16,7 +16,7 @@ export class NavBar extends Component {
         <img className="logo" src={require('../../assets/turing.png')} alt="logo" />
         <h1 className='main-header'>Turing Salaries</h1>
       </div>
-    )
+    );
   }
 }
 
@@ -31,7 +31,7 @@ export const mapDispatchToProps = (dispatch) => {
     salaries: (newData) => {
       dispatch(getAllData(newData));
     }
-  }
-}
+  };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(NavBar);

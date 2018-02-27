@@ -9,119 +9,119 @@ export class LineGraph16 extends Component {
 
   dataCleaner1602(data) {
     let cohort;
-    if(data.length) {
-      cohort = data[0].filter(item => item.final_cohort === '1602')
+    if (data.length) {
+      cohort = data[0].filter(item => item.final_cohort === '1602');
     }
-    return cohort
+    return cohort;
   }
 
   dataCleaner1603(data) {
     let cohort;
-    if(data.length) {
-      cohort = data[0].filter(item => item.final_cohort === '1603')
+    if (data.length) {
+      cohort = data[0].filter(item => item.final_cohort === '1603');
     }
-    return cohort
+    return cohort;
   }
 
   dataCleaner1605(data) {
     let cohort;
-    if(data.length) {
-      cohort = data[0].filter(item => item.final_cohort === '1605')
+    if (data.length) {
+      cohort = data[0].filter(item => item.final_cohort === '1605');
     }
-    return cohort
+    return cohort;
   }
 
 
   render() {
-    if(!this.props.alumni.length) {
+    if (!this.props.alumni.length) {
       return (
         <div>Loading</div>
-      )
+      );
     } else {
-  let alums1602 = this.dataCleaner1602(this.props.alumData)
-  let alum1602 = alums1602.map(salary => parseInt(salary.annualized_salary))
+      let alums1602 = this.dataCleaner1602(this.props.alumData);
+      let alum1602 = alums1602.map(salary => parseInt(salary.annualized_salary));
 
-  let alums1603 = this.dataCleaner1603(this.props.alumData)
-  let alum1603 = alums1603.map(salary => parseInt(salary.annualized_salary))
+      let alums1603 = this.dataCleaner1603(this.props.alumData);
+      let alum1603 = alums1603.map(salary => parseInt(salary.annualized_salary));
 
-  let alums1605 = this.dataCleaner1605(this.props.alumData)
-  let alum1605 = alums1605.map(salary => parseInt(salary.annualized_salary))
+      let alums1605 = this.dataCleaner1605(this.props.alumData);
+      let alum1605 = alums1605.map(salary => parseInt(salary.annualized_salary));
 
 
-    let options = {
+      let options = {
 
-    title: {
-        text: '2016 Salaries'
-    },
-
-    yAxis: {
         title: {
+          text: '2016 Salaries'
+        },
+
+        yAxis: {
+          title: {
             text: 'Salary'
-        }
-    },
-    legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'middle'
-    },
+          }
+        },
+        legend: {
+          layout: 'vertical',
+          align: 'right',
+          verticalAlign: 'middle'
+        },
 
-    xAxis: {
-      categories: ['0']
-    },
+        xAxis: {
+          categories: ['0']
+        },
 
-    plotOptions: {
-        series: {
+        plotOptions: {
+          series: {
             allowPointSelect: true
-        }
-    },
+          }
+        },
 
 
-    series: [
-      {
-        name: '1602',
-        data: alum1602
-    }, {
-        name: '1603',
-        data: alum1603
-    }, {
-        name: '1605',
-        data: alum1605
-    }
-  ],
+        series: [
+          {
+            name: '1602',
+            data: alum1602
+          }, {
+            name: '1603',
+            data: alum1603
+          }, {
+            name: '1605',
+            data: alum1605
+          }
+        ],
 
 
-    responsive: {
-        rules: [{
+        responsive: {
+          rules: [{
             condition: {
-                maxWidth: 500
+              maxWidth: 500
             },
             chartOptions: {
-                legend: {
-                    layout: 'horizontal',
-                    align: 'center',
-                    verticalAlign: 'bottom'
-                }
+              legend: {
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom'
+              }
             }
-        }]
-    }
+          }]
+        }
 
-}
-    return(
-      <div>
-        <HighchartsReact
-          highcharts={Highcharts}
-          options={options}
-         />
-      </div>
-    )
-  }
+      };
+      return (
+        <div>
+          <HighchartsReact
+            highcharts={Highcharts}
+            options={options}
+          />
+        </div>
+      );
+    }
   }
 }
 
 export const mapStateToProps = (store) => {
   return {
     alumni: store.alumData
-  }
-}
+  };
+};
 
-export default connect(mapStateToProps, null)(LineGraph16)
+export default connect(mapStateToProps, null)(LineGraph16);
