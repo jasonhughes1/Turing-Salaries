@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { LineGraph15 } from './LineGraph15';
+import { LineGraph15, mapStateToProps } from './LineGraph15';
 
 
 describe('LineGraph15 Tests', () => {
