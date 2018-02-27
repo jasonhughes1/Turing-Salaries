@@ -10,13 +10,13 @@ export class ViewPie extends Component {
     return (
       <div className='view-pie-container'>
         <div className='link-container-view'>
-        <NavLink className='nav' exact to='/'>Home</NavLink>
-      </div>
+          <NavLink className='nav' exact to='/'>Home</NavLink>
+        </div>
         <h2 className='view-salary-title'>Turing grads have been accepting offers with these job titles</h2>
-          <Pie />
-          <div className='place-holder'></div>
+        <Pie />
+        <div className='place-holder'></div>
       </div>
-    )
+    );
   }
 }
 
