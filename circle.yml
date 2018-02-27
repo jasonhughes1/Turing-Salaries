@@ -5,11 +5,11 @@ machine:
     version: 8.1.2
 
 environment:
-  DATABASE_URL: postgresql://@127.0.0.1:5432/companies_test
+  DATABASE_URL: postgresql://@127.0.0.1:5432/turingsalaries
 
 database:
   override:
-    - sudo -u postgres psql -p 5432 -c "create database companies_test;"
+    - sudo -u postgres psql -p 5432 -c "create database turingsalaries_test;"
     - knex migrate:latest
 
 test:
@@ -20,4 +20,4 @@ deployment:
   staging:
     branch: master
     heroku:
-      appname: byob-top-companies
+      appname: turingsalaries
