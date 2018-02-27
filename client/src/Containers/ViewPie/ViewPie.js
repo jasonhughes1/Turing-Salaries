@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Pie from '../Pie/Pie';
 import './ViewPie.css';
 
-class ViewPie extends Component {
+export class ViewPie extends Component {
 
   render() {
     return (

@@ -1,0 +1,925 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Tests should match snap shot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    acceptedDate="acceptedDate"
+    annualizedSalary="annualizedSalary"
+    daysToOffer="daysToOffer"
+    finalCohort="finalCohort"
+    gradDate="gradDate"
+    originalCohort="originalCohort"
+    originalStartDate="originalStartDate"
+    paymentRate="paymentRate"
+    paymentType="paymentType"
+    title="title"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <p>
+          <span
+                    className="card-titles"
+          >
+                    Job Title:
+          </span>
+           
+          title
+</p>,
+        <p>
+          <span
+                    className="card-titles"
+          >
+                    Salary:
+          </span>
+           $
+          paymentRate
+</p>,
+        <p>
+          <span
+                    className="card-titles"
+          >
+                    Annualized Salary:
+          </span>
+           $
+          annualizedSalary
+</p>,
+        <p>
+          <span
+                    className="card-titles"
+          >
+                    Payment Type:
+          </span>
+           
+          paymentType
+</p>,
+        <p>
+          <span
+                    className="card-titles"
+          >
+                    Offer Accepted:
+          </span>
+           
+          Invalid date
+</p>,
+        <p>
+          <span
+                    className="card-titles"
+          >
+                    Days to Offer:
+          </span>
+           
+          daysToOffer
+</p>,
+        <p>
+          <span
+                    className="card-titles"
+          >
+                    Graduation Date:
+          </span>
+           
+          Invalid date
+</p>,
+        <p>
+          <span
+                    className="card-titles"
+          >
+                    Original Cohort:
+          </span>
+           
+          originalCohort
+</p>,
+        <p>
+          <span
+                    className="card-titles"
+          >
+                    Final Cohort:
+          </span>
+           
+          finalCohort
+</p>,
+        <p>
+          <span
+                    className="card-titles"
+          >
+                    Turing Start Date:
+          </span>
+           
+          Invalid date
+</p>,
+      ],
+      "className": "card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="card-titles"
+>
+              Job Title:
+</span>,
+            " ",
+            "title",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Job Title:",
+              "className": "card-titles",
+            },
+            "ref": null,
+            "rendered": "Job Title:",
+            "type": "span",
+          },
+          " ",
+          "title",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="card-titles"
+>
+              Salary:
+</span>,
+            " $",
+            "paymentRate",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Salary:",
+              "className": "card-titles",
+            },
+            "ref": null,
+            "rendered": "Salary:",
+            "type": "span",
+          },
+          " $",
+          "paymentRate",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="card-titles"
+>
+              Annualized Salary:
+</span>,
+            " $",
+            "annualizedSalary",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Annualized Salary:",
+              "className": "card-titles",
+            },
+            "ref": null,
+            "rendered": "Annualized Salary:",
+            "type": "span",
+          },
+          " $",
+          "annualizedSalary",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="card-titles"
+>
+              Payment Type:
+</span>,
+            " ",
+            "paymentType",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Payment Type:",
+              "className": "card-titles",
+            },
+            "ref": null,
+            "rendered": "Payment Type:",
+            "type": "span",
+          },
+          " ",
+          "paymentType",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="card-titles"
+>
+              Offer Accepted:
+</span>,
+            " ",
+            "Invalid date",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Offer Accepted:",
+              "className": "card-titles",
+            },
+            "ref": null,
+            "rendered": "Offer Accepted:",
+            "type": "span",
+          },
+          " ",
+          "Invalid date",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="card-titles"
+>
+              Days to Offer:
+</span>,
+            " ",
+            "daysToOffer",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Days to Offer:",
+              "className": "card-titles",
+            },
+            "ref": null,
+            "rendered": "Days to Offer:",
+            "type": "span",
+          },
+          " ",
+          "daysToOffer",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="card-titles"
+>
+              Graduation Date:
+</span>,
+            " ",
+            "Invalid date",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Graduation Date:",
+              "className": "card-titles",
+            },
+            "ref": null,
+            "rendered": "Graduation Date:",
+            "type": "span",
+          },
+          " ",
+          "Invalid date",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="card-titles"
+>
+              Original Cohort:
+</span>,
+            " ",
+            "originalCohort",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Original Cohort:",
+              "className": "card-titles",
+            },
+            "ref": null,
+            "rendered": "Original Cohort:",
+            "type": "span",
+          },
+          " ",
+          "originalCohort",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="card-titles"
+>
+              Final Cohort:
+</span>,
+            " ",
+            "finalCohort",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Final Cohort:",
+              "className": "card-titles",
+            },
+            "ref": null,
+            "rendered": "Final Cohort:",
+            "type": "span",
+          },
+          " ",
+          "finalCohort",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="card-titles"
+>
+              Turing Start Date:
+</span>,
+            " ",
+            "Invalid date",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Turing Start Date:",
+              "className": "card-titles",
+            },
+            "ref": null,
+            "rendered": "Turing Start Date:",
+            "type": "span",
+          },
+          " ",
+          "Invalid date",
+        ],
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p>
+            <span
+                        className="card-titles"
+            >
+                        Job Title:
+            </span>
+             
+            title
+</p>,
+          <p>
+            <span
+                        className="card-titles"
+            >
+                        Salary:
+            </span>
+             $
+            paymentRate
+</p>,
+          <p>
+            <span
+                        className="card-titles"
+            >
+                        Annualized Salary:
+            </span>
+             $
+            annualizedSalary
+</p>,
+          <p>
+            <span
+                        className="card-titles"
+            >
+                        Payment Type:
+            </span>
+             
+            paymentType
+</p>,
+          <p>
+            <span
+                        className="card-titles"
+            >
+                        Offer Accepted:
+            </span>
+             
+            Invalid date
+</p>,
+          <p>
+            <span
+                        className="card-titles"
+            >
+                        Days to Offer:
+            </span>
+             
+            daysToOffer
+</p>,
+          <p>
+            <span
+                        className="card-titles"
+            >
+                        Graduation Date:
+            </span>
+             
+            Invalid date
+</p>,
+          <p>
+            <span
+                        className="card-titles"
+            >
+                        Original Cohort:
+            </span>
+             
+            originalCohort
+</p>,
+          <p>
+            <span
+                        className="card-titles"
+            >
+                        Final Cohort:
+            </span>
+             
+            finalCohort
+</p>,
+          <p>
+            <span
+                        className="card-titles"
+            >
+                        Turing Start Date:
+            </span>
+             
+            Invalid date
+</p>,
+        ],
+        "className": "card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="card-titles"
+>
+                Job Title:
+</span>,
+              " ",
+              "title",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Job Title:",
+                "className": "card-titles",
+              },
+              "ref": null,
+              "rendered": "Job Title:",
+              "type": "span",
+            },
+            " ",
+            "title",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="card-titles"
+>
+                Salary:
+</span>,
+              " $",
+              "paymentRate",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Salary:",
+                "className": "card-titles",
+              },
+              "ref": null,
+              "rendered": "Salary:",
+              "type": "span",
+            },
+            " $",
+            "paymentRate",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="card-titles"
+>
+                Annualized Salary:
+</span>,
+              " $",
+              "annualizedSalary",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Annualized Salary:",
+                "className": "card-titles",
+              },
+              "ref": null,
+              "rendered": "Annualized Salary:",
+              "type": "span",
+            },
+            " $",
+            "annualizedSalary",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="card-titles"
+>
+                Payment Type:
+</span>,
+              " ",
+              "paymentType",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Payment Type:",
+                "className": "card-titles",
+              },
+              "ref": null,
+              "rendered": "Payment Type:",
+              "type": "span",
+            },
+            " ",
+            "paymentType",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="card-titles"
+>
+                Offer Accepted:
+</span>,
+              " ",
+              "Invalid date",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Offer Accepted:",
+                "className": "card-titles",
+              },
+              "ref": null,
+              "rendered": "Offer Accepted:",
+              "type": "span",
+            },
+            " ",
+            "Invalid date",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="card-titles"
+>
+                Days to Offer:
+</span>,
+              " ",
+              "daysToOffer",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Days to Offer:",
+                "className": "card-titles",
+              },
+              "ref": null,
+              "rendered": "Days to Offer:",
+              "type": "span",
+            },
+            " ",
+            "daysToOffer",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="card-titles"
+>
+                Graduation Date:
+</span>,
+              " ",
+              "Invalid date",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Graduation Date:",
+                "className": "card-titles",
+              },
+              "ref": null,
+              "rendered": "Graduation Date:",
+              "type": "span",
+            },
+            " ",
+            "Invalid date",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="card-titles"
+>
+                Original Cohort:
+</span>,
+              " ",
+              "originalCohort",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Original Cohort:",
+                "className": "card-titles",
+              },
+              "ref": null,
+              "rendered": "Original Cohort:",
+              "type": "span",
+            },
+            " ",
+            "originalCohort",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="card-titles"
+>
+                Final Cohort:
+</span>,
+              " ",
+              "finalCohort",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Final Cohort:",
+                "className": "card-titles",
+              },
+              "ref": null,
+              "rendered": "Final Cohort:",
+              "type": "span",
+            },
+            " ",
+            "finalCohort",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="card-titles"
+>
+                Turing Start Date:
+</span>,
+              " ",
+              "Invalid date",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Turing Start Date:",
+                "className": "card-titles",
+              },
+              "ref": null,
+              "rendered": "Turing Start Date:",
+              "type": "span",
+            },
+            " ",
+            "Invalid date",
+          ],
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
