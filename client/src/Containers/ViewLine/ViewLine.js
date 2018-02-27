@@ -17,10 +17,11 @@ class ViewLine extends Component {
       </div>
         <h2 className='view-salary-title'>View salary information for cohorts from 2015 and 2016</h2>
           <LineGraph15 alumData={this.props.alumni}/>
-          <div class="place-holder"></div>
+          <div className="place-holder"></div>
           <LineGraph16 alumData={this.props.alumni}/>
+          <div className="place-holder"></div>
           <LineGraphYearly alumData={this.props.alumni} />
-          <div class="place-holder"></div>
+          <div className="place-holder"></div>
       </div>
     )
   }
