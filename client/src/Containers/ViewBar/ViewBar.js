@@ -10,13 +10,13 @@ export class ViewBar extends Component {
     return (
       <div className='view-bar-container'>
         <div className='link-container-view'>
-        <NavLink className='nav' exact to='/'>Home</NavLink>
-      </div>
+          <NavLink className='nav' exact to='/'>Home</NavLink>
+        </div>
         <h2 className='view-salary-title'>How long does it take graduates to find jobs?</h2>
-          <Bar />
-          <div className='place-holder'></div>
+        <Bar />
+        <div className='place-holder'></div>
       </div>
-    )
+    );
   }
 }
 
