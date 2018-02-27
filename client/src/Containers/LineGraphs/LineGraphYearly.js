@@ -24,12 +24,12 @@ class LineGraphYearly extends Component {
       let options = {
 
     title: {
-        text: '2016 Salaries'
+        text: 'Offers Numbers Throughout the Year'
     },
 
     yAxis: {
         title: {
-            text: 'Salary'
+            text: 'Number of Offers'
         }
     },
     legend: {
@@ -39,7 +39,7 @@ class LineGraphYearly extends Component {
     },
 
     xAxis: {
-      categories: ['0']
+      categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     },
 
     plotOptions: {
@@ -52,7 +52,7 @@ class LineGraphYearly extends Component {
     series: [
       {
         name: 'Yearly Totals',
-        data: data
+        data: Object.values(data)
       }  
     ],
 
