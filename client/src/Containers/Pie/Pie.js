@@ -20,7 +20,6 @@ class Pie extends Component {
       accu[values.title]++
       return accu;
     }, {})
-    console.log(data);
 
     let options = {
 
