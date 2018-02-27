@@ -14,7 +14,7 @@ class Bar extends Component {
     } else {
    let data = this.props.alumni[0]
    let offerDays = data.map(days => days.days_to_offer)
-  
+
    let beforeGrad = offerDays.filter(small => small <= 0)
    console.log(beforeGrad.length)
    let smallDays = offerDays.filter(small => small > 0 && small <= 30)
@@ -23,13 +23,19 @@ class Bar extends Component {
    console.log(mediumDays.length)
    let bigDays = offerDays.filter(small => small > 60 && small <= 90)
    console.log(bigDays.length)
-   let largeDays = offerDays.filter(small => small > 90 && small <= 400)
+   let largeDays = offerDays.filter(small => small > 90 && small <= 120)
    console.log(largeDays.length)
-   
-    
+   let hugeDays = offerDays.filter(small => small > 120 && small <= 150)
+   console.log(hugeDays.length);
+   let giganticDays = offerDays.filter(small => small > 150 && small <= 400)
+   console.log(giganticDays.length);
     let options = {
 
       chart: {
+        spacingBottom: 15,
+        spacingTop: 10,
+        spacingLeft: 10,
+        spacingRight: 10,
         type: 'column'
     },
     title: {
@@ -78,10 +84,16 @@ class Bar extends Component {
             name: '61-90 Days',
             y: bigDays.length,
         }, {
-            name: '100 + Days',
+            name: '91-120 Days',
             y: largeDays.length,
-
-        }]
+        }, {
+            name: '120-150 Days',
+            y: hugeDays.length,
+        }, {
+            name: '150+ Days',
+            y: giganticDays.length
+        }
+      ]
     }],
 }
     return(

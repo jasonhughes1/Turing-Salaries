@@ -3,18 +3,21 @@ import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import LineGraph15 from '../LineGraphs/LineGraph15';
 import LineGraph16 from '../LineGraphs/LineGraph16';
+import './ViewLine.css';
 
 class ViewLine extends Component {
 
   render() {
     return (
-      <div className='view-salary-container'>
+      <div className='view-line-container'>
         <div className='link-container-view'>
         <NavLink className='nav' exact to='/'>Home</NavLink>
       </div>
-        <h1 className='view-salary-title'>Salary and Job Comparisons</h1>
+        <h2 className='view-salary-title'>View salary information for cohorts from 2015 and 2016</h2>
           <LineGraph15 alumData={this.props.alumni}/>
+          <div class="place-holder"></div>
           <LineGraph16 alumData={this.props.alumni}/>
+          <div class="place-holder"></div>
       </div>
     )
   }
