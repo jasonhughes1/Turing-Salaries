@@ -3,7 +3,9 @@ import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import LineGraph15 from '../LineGraphs/LineGraph15';
 import LineGraph16 from '../LineGraphs/LineGraph16';
+import LineGraphYearly from '../LineGraphs/LineGraphYearly'
 import './ViewLine.css';
+
 
 class ViewLine extends Component {
 
@@ -17,6 +19,7 @@ class ViewLine extends Component {
           <LineGraph15 alumData={this.props.alumni}/>
           <div class="place-holder"></div>
           <LineGraph16 alumData={this.props.alumni}/>
+          <LineGraphYearly alumData={this.props.alumni} />
           <div class="place-holder"></div>
       </div>
     )
