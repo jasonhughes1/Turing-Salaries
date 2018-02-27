@@ -4,7 +4,7 @@ import { getData } from '../../helpers/API';
 import { connect } from 'react-redux';
 import { getAllData } from '../../actions/actions';
 
-class NavBar extends Component {
+export class NavBar extends Component {
 
   componentDidMount() {
     this.props.salaries();
