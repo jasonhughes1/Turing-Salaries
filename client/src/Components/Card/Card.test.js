@@ -34,5 +34,5 @@ describe('Card Tests', () => {
     />);
 
     expect(renderedCard).toMatchSnapshot();
-  })
-})
+  });
+});
