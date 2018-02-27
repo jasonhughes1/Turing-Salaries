@@ -9,8 +9,8 @@ describe('Reducers', () => {
     expect(alumDataReducer(undefined, {})).toEqual(expected)
   });
 
-  it.skip('shuld return a new state with alumni data', () => {
-    const data = [
+  it('should return a new state with alumni data', () => {
+    const data =
       {
         "original_cohort": 1502,
         "original_start_date": "2/9/2015",
@@ -23,8 +23,9 @@ describe('Reducers', () => {
         "annualized_salary": 100000.00,
         "title": "Research Associate"
       }
-    ];
-    const expected = [...data]
+
+
+    const expected = [data]
 
     expect(alumDataReducer(undefined, actions.fetchDataSuccess(data))).toEqual(expected)
   })
