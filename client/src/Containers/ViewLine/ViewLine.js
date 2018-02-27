@@ -7,7 +7,7 @@ import LineGraphYearly from '../LineGraphs/LineGraphYearly'
 import './ViewLine.css';
 
 
-class ViewLine extends Component {
+export class ViewLine extends Component {
 
   render() {
     return (

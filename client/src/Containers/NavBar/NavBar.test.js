@@ -4,13 +4,13 @@ import { NavBar, mapStateToProps, mapDispatchToProps } from './NavBar';
 
 describe('NavBar Tests', () => {
 
-  it.skip('should be defined', () => {
+  it('should be defined', () => {
     const mockData = [];
     const renderedNavBar = shallow(<NavBar alumni={mockData} />);
     expect(renderedNavBar).toBeDefined()
   });
 
-  it.only('should match snap shot', () => {
+  it('should match snap shot', () => {
     const mockData = [];
     const renderedNavBar = shallow(<NavBar alumni={mockData} />);
 
@@ -19,9 +19,10 @@ describe('NavBar Tests', () => {
 })
 
 describe('Map State To Props Test', () => {
-  it.skip('should alumni data from the store', () => {
+  it('should alumni data from the store', () => {
     const mockStore = {
-      alumni: {
+      alumnData: [
+        {
       "original_cohort": 1502,
       "original_start_date": "2/9/2015",
       "final_cohort": 1507,
@@ -32,9 +33,24 @@ describe('Map State To Props Test', () => {
       "payment_rate": 100000.00,
       "annualized_salary": 100000.00,
       "title": "Research Associate"
-      }
+    }]
     }
     const expected = mapStateToProps(mockStore);
     expect(expected.alumni).toEqual(mockStore.alumni)
+  })
+})
+
+describe ('Map dispatch to props', () => {
+  let mockDispatch;
+  let result;
+
+  beforeEach(() => {
+    mockDispatch = jest.fn();
+    result = mapDispatchToProps(mockDispatch);
+  });
+
+  it.skip('should call dispatch when getAllData is called', () => {
+    result.getAllData();
+    expect(mockDispatch).toHaveBeenCalled();
   })
 })

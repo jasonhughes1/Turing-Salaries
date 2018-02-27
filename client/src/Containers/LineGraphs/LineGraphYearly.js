@@ -4,13 +4,13 @@ import HighchartsReact from 'highcharts-react-official';
 import { connect } from 'react-redux';
 
 
-class LineGraphYearly extends Component {
+export class LineGraphYearly extends Component {
   render() {
     if(!this.props.alumni.length) {
       return (
         <div>Loading</div>
       )
-    } else { 
+    } else {
       const data = this.props.alumni[0].reduce((accu, months) => {
       let small = months.accepted_date.slice(5, 7)
         if(!accu[small]) {
@@ -52,7 +52,7 @@ class LineGraphYearly extends Component {
       {
         name: 'Monthly Totals',
         data: [data['01'], data['02'], data['03'], data['04'], data['05'], data['06'], data['07'], data['08'], data['09'], data['10'], data['11'], data['12']]
-      }  
+      }
     ],
 
 

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Bar from '../Bar/Bar';
 import './ViewBar.css';
 
-class ViewBar extends Component {
+export class ViewBar extends Component {
 
   render() {
     return (

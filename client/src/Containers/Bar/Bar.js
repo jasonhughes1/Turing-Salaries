@@ -4,7 +4,7 @@ import Highcharts from 'highcharts/highstock';
 import HighchartsReact from 'highcharts-react-official';
 import { connect } from 'react-redux';
 
-class Bar extends Component {
+export class Bar extends Component {
 
   render() {
     if(!this.props.alumni.length) {

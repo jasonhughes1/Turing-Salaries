@@ -4,7 +4,7 @@ import Highcharts from 'highcharts/highstock';
 import HighchartsReact from 'highcharts-react-official';
 import { connect } from 'react-redux';
 
-class Pie extends Component {
+export class Pie extends Component {
 
 
   render() {

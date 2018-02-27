@@ -4,7 +4,7 @@ import Highcharts from 'highcharts/highstock';
 import HighchartsReact from 'highcharts-react-official';
 import { connect } from 'react-redux';
 
-class LineGraph16 extends Component {
+export class LineGraph16 extends Component {
 
 
   dataCleaner1602(data) {
