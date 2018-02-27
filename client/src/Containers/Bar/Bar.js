@@ -32,6 +32,10 @@ class Bar extends Component {
     let options = {
 
       chart: {
+        spacingBottom: 15,
+        spacingTop: 10,
+        spacingLeft: 10,
+        spacingRight: 10,
         type: 'column'
     },
     title: {
