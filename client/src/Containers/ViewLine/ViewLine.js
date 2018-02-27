@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import LineGraph15 from '../LineGraphs/LineGraph15';
 import LineGraph16 from '../LineGraphs/LineGraph16';
+import LineGraphYearly from '../LineGraphs/LineGraphYearly'
 
 class ViewLine extends Component {
 
@@ -15,6 +16,7 @@ class ViewLine extends Component {
         <h1 className='view-salary-title'>Salary and Job Comparisons</h1>
           <LineGraph15 alumData={this.props.alumni}/>
           <LineGraph16 alumData={this.props.alumni}/>
+          <LineGraphYearly alumData={this.props.alumni} />
       </div>
     )
   }
