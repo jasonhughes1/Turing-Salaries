@@ -35,7 +35,17 @@ ShallowWrapper {
         <Route
           component={[Function]}
           exact={true}
-          path="/viewcharts"
+          path="/viewline"
+/>,
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/viewbar"
+/>,
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/viewpie"
 />,
       ],
       "className": "App",
@@ -82,12 +92,38 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "ViewCharts",
+        "key": "ViewLine",
         "nodeType": "class",
         "props": Object {
           "component": [Function],
           "exact": true,
-          "path": "/viewcharts",
+          "path": "/viewline",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "ViewBar",
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "exact": true,
+          "path": "/viewbar",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "ViewPie",
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "exact": true,
+          "path": "/viewpie",
         },
         "ref": null,
         "rendered": null,
@@ -120,7 +156,17 @@ ShallowWrapper {
           <Route
             component={[Function]}
             exact={true}
-            path="/viewcharts"
+            path="/viewline"
+/>,
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/viewbar"
+/>,
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/viewpie"
 />,
         ],
         "className": "App",
@@ -167,12 +213,38 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "ViewCharts",
+          "key": "ViewLine",
           "nodeType": "class",
           "props": Object {
             "component": [Function],
             "exact": true,
-            "path": "/viewcharts",
+            "path": "/viewline",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "ViewBar",
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "exact": true,
+            "path": "/viewbar",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "ViewPie",
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "exact": true,
+            "path": "/viewpie",
           },
           "ref": null,
           "rendered": null,

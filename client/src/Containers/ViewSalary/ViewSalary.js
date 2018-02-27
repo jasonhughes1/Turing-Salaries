@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import Card from '../../Components/Card/Card';
 
 
-class ViewSalary extends Component {
+export class ViewSalary extends Component {
   constructor() {
     super();
     this.state = {
