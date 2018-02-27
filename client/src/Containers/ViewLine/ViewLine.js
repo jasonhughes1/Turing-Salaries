@@ -12,7 +12,7 @@ class ViewLine extends Component {
         <div className='link-container-view'>
         <NavLink className='nav' exact to='/'>Home</NavLink>
       </div>
-        <h1 className='view-salary-title'>Salary and Job Comparisons</h1>
+        <h2 className='view-salary-title'>View salary information for cohorts from 2015 and 2016</h2>
           <LineGraph15 alumData={this.props.alumni}/>
           <LineGraph16 alumData={this.props.alumni}/>
       </div>

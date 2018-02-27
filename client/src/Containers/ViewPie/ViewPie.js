@@ -11,7 +11,7 @@ class ViewPie extends Component {
         <div className='link-container-view'>
         <NavLink className='nav' exact to='/'>Home</NavLink>
       </div>
-        <h1 className='view-salary-title'>Salary and Job Comparisons</h1>
+        <h2 className='view-salary-title'>Turing grads have been accepting offers with these job titles</h2>
           <Pie />
       </div>
     )

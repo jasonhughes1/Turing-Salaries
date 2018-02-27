@@ -11,7 +11,7 @@ class ViewBar extends Component {
         <div className='link-container-view'>
         <NavLink className='nav' exact to='/'>Home</NavLink>
       </div>
-        <h1 className='view-salary-title'>Salary and Job Comparisons</h1>
+        <h2 className='view-salary-title'>How long does it take graduates to find jobs?</h2>
           <Bar />
       </div>
     )
