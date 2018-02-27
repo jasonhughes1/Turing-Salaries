@@ -19,12 +19,13 @@ class LineGraphYearly extends Component {
         accu[small]++
         return accu
       }, {})
+      console.log(Object.values(data))
       console.log(data)
 
       let options = {
 
     title: {
-        text: 'Offers Numbers Throughout the Year'
+        text: 'Offer Numbers Throughout the Year'
     },
 
     yAxis: {
@@ -39,7 +40,7 @@ class LineGraphYearly extends Component {
     },
 
     xAxis: {
-      categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+      categories: ['January', 'Feburary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
     },
 
     plotOptions: {
@@ -51,8 +52,8 @@ class LineGraphYearly extends Component {
 
     series: [
       {
-        name: 'Yearly Totals',
-        data: Object.values(data)
+        name: 'Monthly Totals',
+        data: [7, 8, 7, 10, 11, 12, 7, 8, 9, 5, 12, 5]
       }  
     ],
 
