@@ -6,7 +6,7 @@ describe('Reducers', () => {
   it('should return the default state', () => {
     const expected = [];
 
-    expect(alumDataReducer(undefined, {})).toEqual(expected)
+    expect(alumDataReducer(undefined, {})).toEqual(expected);
   });
 
   it('should return a new state with alumni data', () => {
@@ -22,11 +22,11 @@ describe('Reducers', () => {
         "payment_rate": 100000.00,
         "annualized_salary": 100000.00,
         "title": "Research Associate"
-      }
+      };
 
 
-    const expected = [data]
+    const expected = [data];
 
-    expect(alumDataReducer(undefined, actions.fetchDataSuccess(data))).toEqual(expected)
-  })
-})
+    expect(alumDataReducer(undefined, actions.fetchDataSuccess(data))).toEqual(expected);
+  });
+});
