@@ -8,7 +8,7 @@ import rootReducers from './reducers/rootReducers';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import promise from 'redux-promise';
-const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
 const middleware = applyMiddleware(thunk, promise, logger);
 export const store = createStore(
   rootReducers,
