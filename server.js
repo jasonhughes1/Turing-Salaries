@@ -11,6 +11,17 @@ const database = require('knex')(configuration);
 
 app.use('/', express.static(`${__dirname}/client/build`));
 
+const requireHTTPS = (request, response, next) => {
+  if(request.header('x-forwarded-proto') !== 'https') {
+    return response.redirect(`https://${request.header('host')}${request.url}`);
+  }
+  next()
+}
+
+if (process.env.NODE_ENV === 'production') { 
+  app.use(requireHTTPS); 
+}
+
 
 app.get('/api/v1/alumni', (request, response) => {
   database('alumni').select()
