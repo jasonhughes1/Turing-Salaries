@@ -5,14 +5,20 @@ import { NavBar, mapStateToProps, mapDispatchToProps } from './NavBar';
 describe('NavBar Tests', () => {
 
   it('should be defined', () => {
+    const mockFunc = jest.fn();
     const mockData = [];
-    const renderedNavBar = shallow(<NavBar alumni={mockData} />);
+    const renderedNavBar = shallow(<NavBar alumni={mockData}
+                                       getAllData={mockFunc}
+    />);
     expect(renderedNavBar).toBeDefined()
   });
 
   it('should match snap shot', () => {
+    const mockFunc = jest.fn();
     const mockData = [];
-    const renderedNavBar = shallow(<NavBar alumni={mockData} />);
+    const renderedNavBar = shallow(<NavBar alumni={mockData}
+                                       getAllData={mockFunc}
+     />);
 
     expect(renderedNavBar).toMatchSnapshot();
   })
@@ -46,7 +52,7 @@ describe ('Map dispatch to props', () => {
 
   beforeEach(() => {
     mockDispatch = jest.fn();
-    result = mapDispatchToProps(mockDispatch);
+    result =  mapDispatchToProps(mockDispatch);
   });
 
   it.skip('should call dispatch when getAllData is called', () => {
