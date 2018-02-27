@@ -19,8 +19,6 @@ class LineGraphYearly extends Component {
         accu[small]++
         return accu
       }, {})
-      console.log(Object.values(data))
-      console.log(data)
 
       let options = {
 
@@ -53,7 +51,7 @@ class LineGraphYearly extends Component {
     series: [
       {
         name: 'Monthly Totals',
-        data: [7, 8, 7, 10, 11, 12, 7, 8, 9, 5, 12, 5]
+        data: [data['01'], data['02'], data['03'], data['04'], data['05'], data['06'], data['07'], data['08'], data['09'], data['10'], data['11'], data['12']]
       }  
     ],
 
