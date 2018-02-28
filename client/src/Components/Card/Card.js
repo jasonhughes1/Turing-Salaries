@@ -39,7 +39,7 @@ const Card = (props) => {
 
 export default Card;
 
-Card.PropTypes = {
+Card.propTypes = {
   title: PropTypes.string,
   paymentRate: PropTypes.string,
   acceptedDate: PropTypes.string,
@@ -47,7 +47,7 @@ Card.PropTypes = {
   originalStartDate: PropTypes.string,
   annualizedSalary: PropTypes.string,
   paymentType: PropTypes.string,
-  daysToOffer: PropTypes.string,
+  daysToOffer: PropTypes.number,
   originalCohort: PropTypes.string,
   finalCohort: PropTypes.string,
   
