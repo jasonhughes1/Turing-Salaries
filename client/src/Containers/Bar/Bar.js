@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Highcharts from 'highcharts/highstock';
 import HighchartsReact from 'highcharts-react-official';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 export class Bar extends Component {
 
@@ -109,3 +110,7 @@ export const mapStateToProps = (store) => {
 }
 
 export default connect(mapStateToProps, null)(Bar)
+
+Bar.propTypes = {
+  alumni: PropTypes.array
+}
