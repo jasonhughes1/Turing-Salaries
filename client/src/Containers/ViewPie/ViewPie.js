@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Pie from '../Pie/Pie';
 import './ViewPie.css';
+import PropTypes from 'prop-types';
 
 export class ViewPie extends Component {
 
@@ -27,3 +28,7 @@ export const mapStateToProps = (store) => {
 };
 
 export default connect(mapStateToProps, null)(ViewPie);
+
+ViewPie.propTypes = {
+  alumni: PropTypes.array
+}

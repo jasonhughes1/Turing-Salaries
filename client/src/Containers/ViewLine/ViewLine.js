@@ -5,6 +5,7 @@ import LineGraph15 from '../LineGraphs/LineGraph15';
 import LineGraph16 from '../LineGraphs/LineGraph16';
 import LineGraphYearly from '../LineGraphs/LineGraphYearly'
 import './ViewLine.css';
+import PropTypes from 'prop-types';
 
 
 export class ViewLine extends Component {
@@ -34,3 +35,7 @@ export const mapStateToProps = (store) => {
 };
 
 export default connect(mapStateToProps, null)(ViewLine);
+
+ViewLine.propTypes = {
+  alumni: PropTypes.array
+}
