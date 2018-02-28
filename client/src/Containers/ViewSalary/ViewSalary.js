@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './ViewSalary.css';
 import { connect } from 'react-redux';
 import Card from '../../Components/Card/Card';
+import PropTypes from 'prop-types';
 
 
 export class ViewSalary extends Component {
@@ -58,3 +59,7 @@ export const mapStateToProps = (store) => {
 };
 
 export default connect(mapStateToProps, null)(ViewSalary);
+
+ViewSalary.propTypes = {
+  alumni: PropTypes.array
+}
