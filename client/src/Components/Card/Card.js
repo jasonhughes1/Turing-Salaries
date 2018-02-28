@@ -2,7 +2,7 @@ import React from 'react';
 import './Card.css';
 import moment from 'moment';
 import PropTypes from 'prop-types';
-
+moment.suppressDeprecationWarnings = true;
 
 const Card = (props) => {
   const formatted =
@@ -50,5 +50,5 @@ Card.propTypes = {
   daysToOffer: PropTypes.number,
   originalCohort: PropTypes.string,
   finalCohort: PropTypes.string,
-  
+
 }

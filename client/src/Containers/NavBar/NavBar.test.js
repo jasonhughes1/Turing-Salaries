@@ -54,9 +54,4 @@ describe('Map dispatch to props', () => {
     mockDispatch = jest.fn();
     result =  mapDispatchToProps(mockDispatch);
   });
-
-  it.skip('should call dispatch when getAllData is called', () => {
-    result.getAllData();
-    expect(mockDispatch).toHaveBeenCalled();
-  });
 });
