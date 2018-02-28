@@ -1,6 +1,7 @@
 import React from 'react';
 import './Card.css';
 import moment from 'moment';
+import PropTypes from 'prop-types';
 
 
 const Card = (props) => {
@@ -36,6 +37,18 @@ const Card = (props) => {
   );
 };
 
-
-
 export default Card;
+
+Card.PropTypes = {
+  title: PropTypes.string,
+  paymentRate: PropTypes.string,
+  acceptedDate: PropTypes.string,
+  gradDate: PropTypes.string,
+  originalStartDate: PropTypes.string,
+  annualizedSalary: PropTypes.string,
+  paymentType: PropTypes.string,
+  daysToOffer: PropTypes.string,
+  originalCohort: PropTypes.string,
+  finalCohort: PropTypes.string,
+  
+}
