@@ -7,7 +7,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Card
     acceptedDate="acceptedDate"
     annualizedSalary="annualizedSalary"
-    daysToOffer="daysToOffer"
+    daysToOffer={10}
     finalCohort="finalCohort"
     gradDate="gradDate"
     originalCohort="originalCohort"
@@ -77,7 +77,7 @@ ShallowWrapper {
           >
                     Days to Offer:
           </span>
-          daysToOffer
+          10
 </p>,
         <p>
           <span
@@ -291,7 +291,7 @@ ShallowWrapper {
 >
               Days to Offer:
 </span>,
-            "daysToOffer",
+            10,
           ],
         },
         "ref": null,
@@ -308,7 +308,7 @@ ShallowWrapper {
             "rendered": "Days to Offer:",
             "type": "span",
           },
-          "daysToOffer",
+          10,
         ],
         "type": "p",
       },
@@ -498,7 +498,7 @@ ShallowWrapper {
             >
                         Days to Offer:
             </span>
-            daysToOffer
+            10
 </p>,
           <p>
             <span
@@ -712,7 +712,7 @@ ShallowWrapper {
 >
                 Days to Offer:
 </span>,
-              "daysToOffer",
+              10,
             ],
           },
           "ref": null,
@@ -729,7 +729,7 @@ ShallowWrapper {
               "rendered": "Days to Offer:",
               "type": "span",
             },
-            "daysToOffer",
+            10,
           ],
           "type": "p",
         },
