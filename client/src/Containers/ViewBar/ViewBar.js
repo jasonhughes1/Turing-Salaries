@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Bar from '../Bar/Bar';
 import './ViewBar.css';
+import PropTypes from 'prop-types';
 
 export class ViewBar extends Component {
 
@@ -27,3 +28,7 @@ export const mapStateToProps = (store) => {
 };
 
 export default connect(mapStateToProps, null)(ViewBar);
+
+ViewBar.propTypes = {
+  alumni: PropTypes.array
+}
