@@ -35,7 +35,6 @@ ShallowWrapper {
           >
                     Job Title:
           </span>
-           
           title
 </p>,
         <p>
@@ -44,7 +43,7 @@ ShallowWrapper {
           >
                     Salary:
           </span>
-           $
+          $
           paymentRate
 </p>,
         <p>
@@ -53,7 +52,7 @@ ShallowWrapper {
           >
                     Annualized Salary:
           </span>
-           $
+          $
           annualizedSalary
 </p>,
         <p>
@@ -62,7 +61,6 @@ ShallowWrapper {
           >
                     Payment Type:
           </span>
-           
           paymentType
 </p>,
         <p>
@@ -71,7 +69,6 @@ ShallowWrapper {
           >
                     Offer Accepted:
           </span>
-           
           Invalid date
 </p>,
         <p>
@@ -80,7 +77,6 @@ ShallowWrapper {
           >
                     Days to Offer:
           </span>
-           
           daysToOffer
 </p>,
         <p>
@@ -89,7 +85,6 @@ ShallowWrapper {
           >
                     Graduation Date:
           </span>
-           
           Invalid date
 </p>,
         <p>
@@ -98,7 +93,6 @@ ShallowWrapper {
           >
                     Original Cohort:
           </span>
-           
           originalCohort
 </p>,
         <p>
@@ -107,7 +101,6 @@ ShallowWrapper {
           >
                     Final Cohort:
           </span>
-           
           finalCohort
 </p>,
         <p>
@@ -116,7 +109,6 @@ ShallowWrapper {
           >
                     Turing Start Date:
           </span>
-           
           Invalid date
 </p>,
       ],
@@ -135,7 +127,6 @@ ShallowWrapper {
 >
               Job Title:
 </span>,
-            " ",
             "title",
           ],
         },
@@ -153,7 +144,6 @@ ShallowWrapper {
             "rendered": "Job Title:",
             "type": "span",
           },
-          " ",
           "title",
         ],
         "type": "p",
@@ -169,7 +159,7 @@ ShallowWrapper {
 >
               Salary:
 </span>,
-            " $",
+            "$",
             "paymentRate",
           ],
         },
@@ -187,7 +177,7 @@ ShallowWrapper {
             "rendered": "Salary:",
             "type": "span",
           },
-          " $",
+          "$",
           "paymentRate",
         ],
         "type": "p",
@@ -203,7 +193,7 @@ ShallowWrapper {
 >
               Annualized Salary:
 </span>,
-            " $",
+            "$",
             "annualizedSalary",
           ],
         },
@@ -221,7 +211,7 @@ ShallowWrapper {
             "rendered": "Annualized Salary:",
             "type": "span",
           },
-          " $",
+          "$",
           "annualizedSalary",
         ],
         "type": "p",
@@ -237,7 +227,6 @@ ShallowWrapper {
 >
               Payment Type:
 </span>,
-            " ",
             "paymentType",
           ],
         },
@@ -255,7 +244,6 @@ ShallowWrapper {
             "rendered": "Payment Type:",
             "type": "span",
           },
-          " ",
           "paymentType",
         ],
         "type": "p",
@@ -271,7 +259,6 @@ ShallowWrapper {
 >
               Offer Accepted:
 </span>,
-            " ",
             "Invalid date",
           ],
         },
@@ -289,7 +276,6 @@ ShallowWrapper {
             "rendered": "Offer Accepted:",
             "type": "span",
           },
-          " ",
           "Invalid date",
         ],
         "type": "p",
@@ -305,7 +291,6 @@ ShallowWrapper {
 >
               Days to Offer:
 </span>,
-            " ",
             "daysToOffer",
           ],
         },
@@ -323,7 +308,6 @@ ShallowWrapper {
             "rendered": "Days to Offer:",
             "type": "span",
           },
-          " ",
           "daysToOffer",
         ],
         "type": "p",
@@ -339,7 +323,6 @@ ShallowWrapper {
 >
               Graduation Date:
 </span>,
-            " ",
             "Invalid date",
           ],
         },
@@ -357,7 +340,6 @@ ShallowWrapper {
             "rendered": "Graduation Date:",
             "type": "span",
           },
-          " ",
           "Invalid date",
         ],
         "type": "p",
@@ -373,7 +355,6 @@ ShallowWrapper {
 >
               Original Cohort:
 </span>,
-            " ",
             "originalCohort",
           ],
         },
@@ -391,7 +372,6 @@ ShallowWrapper {
             "rendered": "Original Cohort:",
             "type": "span",
           },
-          " ",
           "originalCohort",
         ],
         "type": "p",
@@ -407,7 +387,6 @@ ShallowWrapper {
 >
               Final Cohort:
 </span>,
-            " ",
             "finalCohort",
           ],
         },
@@ -425,7 +404,6 @@ ShallowWrapper {
             "rendered": "Final Cohort:",
             "type": "span",
           },
-          " ",
           "finalCohort",
         ],
         "type": "p",
@@ -441,7 +419,6 @@ ShallowWrapper {
 >
               Turing Start Date:
 </span>,
-            " ",
             "Invalid date",
           ],
         },
@@ -459,7 +436,6 @@ ShallowWrapper {
             "rendered": "Turing Start Date:",
             "type": "span",
           },
-          " ",
           "Invalid date",
         ],
         "type": "p",
@@ -480,7 +456,6 @@ ShallowWrapper {
             >
                         Job Title:
             </span>
-             
             title
 </p>,
           <p>
@@ -489,7 +464,7 @@ ShallowWrapper {
             >
                         Salary:
             </span>
-             $
+            $
             paymentRate
 </p>,
           <p>
@@ -498,7 +473,7 @@ ShallowWrapper {
             >
                         Annualized Salary:
             </span>
-             $
+            $
             annualizedSalary
 </p>,
           <p>
@@ -507,7 +482,6 @@ ShallowWrapper {
             >
                         Payment Type:
             </span>
-             
             paymentType
 </p>,
           <p>
@@ -516,7 +490,6 @@ ShallowWrapper {
             >
                         Offer Accepted:
             </span>
-             
             Invalid date
 </p>,
           <p>
@@ -525,7 +498,6 @@ ShallowWrapper {
             >
                         Days to Offer:
             </span>
-             
             daysToOffer
 </p>,
           <p>
@@ -534,7 +506,6 @@ ShallowWrapper {
             >
                         Graduation Date:
             </span>
-             
             Invalid date
 </p>,
           <p>
@@ -543,7 +514,6 @@ ShallowWrapper {
             >
                         Original Cohort:
             </span>
-             
             originalCohort
 </p>,
           <p>
@@ -552,7 +522,6 @@ ShallowWrapper {
             >
                         Final Cohort:
             </span>
-             
             finalCohort
 </p>,
           <p>
@@ -561,7 +530,6 @@ ShallowWrapper {
             >
                         Turing Start Date:
             </span>
-             
             Invalid date
 </p>,
         ],
@@ -580,7 +548,6 @@ ShallowWrapper {
 >
                 Job Title:
 </span>,
-              " ",
               "title",
             ],
           },
@@ -598,7 +565,6 @@ ShallowWrapper {
               "rendered": "Job Title:",
               "type": "span",
             },
-            " ",
             "title",
           ],
           "type": "p",
@@ -614,7 +580,7 @@ ShallowWrapper {
 >
                 Salary:
 </span>,
-              " $",
+              "$",
               "paymentRate",
             ],
           },
@@ -632,7 +598,7 @@ ShallowWrapper {
               "rendered": "Salary:",
               "type": "span",
             },
-            " $",
+            "$",
             "paymentRate",
           ],
           "type": "p",
@@ -648,7 +614,7 @@ ShallowWrapper {
 >
                 Annualized Salary:
 </span>,
-              " $",
+              "$",
               "annualizedSalary",
             ],
           },
@@ -666,7 +632,7 @@ ShallowWrapper {
               "rendered": "Annualized Salary:",
               "type": "span",
             },
-            " $",
+            "$",
             "annualizedSalary",
           ],
           "type": "p",
@@ -682,7 +648,6 @@ ShallowWrapper {
 >
                 Payment Type:
 </span>,
-              " ",
               "paymentType",
             ],
           },
@@ -700,7 +665,6 @@ ShallowWrapper {
               "rendered": "Payment Type:",
               "type": "span",
             },
-            " ",
             "paymentType",
           ],
           "type": "p",
@@ -716,7 +680,6 @@ ShallowWrapper {
 >
                 Offer Accepted:
 </span>,
-              " ",
               "Invalid date",
             ],
           },
@@ -734,7 +697,6 @@ ShallowWrapper {
               "rendered": "Offer Accepted:",
               "type": "span",
             },
-            " ",
             "Invalid date",
           ],
           "type": "p",
@@ -750,7 +712,6 @@ ShallowWrapper {
 >
                 Days to Offer:
 </span>,
-              " ",
               "daysToOffer",
             ],
           },
@@ -768,7 +729,6 @@ ShallowWrapper {
               "rendered": "Days to Offer:",
               "type": "span",
             },
-            " ",
             "daysToOffer",
           ],
           "type": "p",
@@ -784,7 +744,6 @@ ShallowWrapper {
 >
                 Graduation Date:
 </span>,
-              " ",
               "Invalid date",
             ],
           },
@@ -802,7 +761,6 @@ ShallowWrapper {
               "rendered": "Graduation Date:",
               "type": "span",
             },
-            " ",
             "Invalid date",
           ],
           "type": "p",
@@ -818,7 +776,6 @@ ShallowWrapper {
 >
                 Original Cohort:
 </span>,
-              " ",
               "originalCohort",
             ],
           },
@@ -836,7 +793,6 @@ ShallowWrapper {
               "rendered": "Original Cohort:",
               "type": "span",
             },
-            " ",
             "originalCohort",
           ],
           "type": "p",
@@ -852,7 +808,6 @@ ShallowWrapper {
 >
                 Final Cohort:
 </span>,
-              " ",
               "finalCohort",
             ],
           },
@@ -870,7 +825,6 @@ ShallowWrapper {
               "rendered": "Final Cohort:",
               "type": "span",
             },
-            " ",
             "finalCohort",
           ],
           "type": "p",
@@ -886,7 +840,6 @@ ShallowWrapper {
 >
                 Turing Start Date:
 </span>,
-              " ",
               "Invalid date",
             ],
           },
@@ -904,7 +857,6 @@ ShallowWrapper {
               "rendered": "Turing Start Date:",
               "type": "span",
             },
-            " ",
             "Invalid date",
           ],
           "type": "p",
