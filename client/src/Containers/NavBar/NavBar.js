@@ -13,8 +13,7 @@ export class NavBar extends Component {
   render() {
     return (
       <div className='nav-bar'>
-        <img className="logo" src={require('../../assets/turing.png')} alt="logo" />
-        <h1 className='main-header'>Turing Salaries</h1>
+        <h1 className='main-header'>Movement <img className="logo" src={require('../../assets/movementacademy.jpg')} alt="logo" />Academy</h1>
       </div>
     );
   }
